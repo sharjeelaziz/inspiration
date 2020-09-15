@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="refresh" content="3600">
+        <title>Inspiration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<script type="text/javascript" src="static/js/modernizr.custom.86080.js"></script>
+    <script>
+  // START CLOCK SCRIPT
+
+  Number.prototype.pad = function(n) {
+    for (var r = this.toString(); r.length < n; r = 0 + r);
+    return r;
+  };
+
+  function updateClock() {
+    var now = new Date();
+    var milli = now.getMilliseconds(),
+    sec = now.getSeconds(),
+    min = now.getMinutes(),
+    hou = now.getHours(),
+    mo = now.getMonth(),
+    dy = now.getDate(),
+    yr = now.getFullYear();
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    //var tags = ["mon", "d", "y", "h", "m", "s", "mi"],
+    //corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), sec.pad(2), milli];
+    var tags = ["mon", "d", "y", "h", "m"],
+    corr = [months[mo], dy, yr, hou.pad(2), min.pad(2)];
+    for (var i = 0; i < tags.length; i++)
+    document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+  }
+
+  function initClock() {
+    updateClock();
+    window.setInterval("updateClock()", 1);
+  }
+
+  // END CLOCK SCRIPT
+</script>
+    </head>
+    <body id="page" onLoad="initClock()">
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span><div>
+              {% if quote %}
+                  <h3>
+                  {{ quote }}
+                  </h3>
+                  {% if author %}
+                    <p>-{{ author }}</p>
+                    <br>
+                    <p>Image by Jiarong Deng</p>
+                  {% else %}
+                    <p>-Anonymous</p>
+                    <br>
+                {% endif %}
+              {% else %}
+                  <h3>
+                  {{ error }}
+                  </h3>
+            {% endif %}
+            </div></li>
+            <li><span>Image 02</span><div>
+              {% if quote1 %}
+                  <h3>
+                  {{ quote1 }}
+                  </h3>
+                  {% if author1 %}
+                    <p>-{{ author1 }}</p>
+                    <br>
+                    <p>Image by Chris Schippers</p>
+                  {% else %}
+                    <p>-Anonymous</p>
+                    <br>
+                {% endif %}
+              {% else %}
+                  <h3>
+                  {{ error }}
+                  </h3>
+            {% endif %}
+            </div></li>
+            <li><span>Image 03</span><div>
+              {% if quote2 %}
+                  <h3>
+                  {{ quote2 }}
+                  </h3>
+                  {% if author2 %}
+                    <p>-{{ author2 }}</p>
+                    <br>
+                    <p>Image by Paul Basel</p>
+                  {% else %}
+                    <p>-Anonymous</p>
+                    <br>
+                {% endif %}
+              {% else %}
+                  <h3>
+                  {{ error }}
+                  </h3>
+            {% endif %}
+            </div></li>
+            <li><span>Image 04</span><div>
+              {% if quote3 %}
+                  <h3>
+                  {{ quote3 }}
+                  </h3>
+                  {% if author3 %}
+                    <p>-{{ author3 }}</p>
+                    <br>
+                    <p>Image by Maxime Francis</p>
+                  {% else %}
+                    <p>-Anonymous</p>
+                    <br>
+                {% endif %}
+              {% else %}
+                  <h3>
+                  {{ error }}
+                  </h3>
+            {% endif %}
+            </div></li>
+            <li><span>Image 05</span><div>
+              {% if quote4 %}
+                  <h3>
+                  {{ quote4 }}
+                  </h3>
+                  {% if author4 %}
+                    <p>-{{ author4 }}</p>
+                    <br>
+                    <p>Image by Craig Adderley</p>
+                  {% else %}
+                    <p>-Anonymous</p>
+                    <br>
+                {% endif %}
+              {% else %}
+                  <h3>
+                  {{ error }}
+                  </h3>
+            {% endif %}
+            </div></li>
+            <li><span>Image 06</span><div>
+              {% if quote5 %}
+                  <h3>
+                  {{ quote5 }}
+                  </h3>
+                  {% if author5 %}
+                    <p>-{{ author5 }}</p>
+                    <br>
+                    <p>Image by Furknsaglam</p>
+                  {% else %}
+                    <p>-Anonymous</p>
+                    <br>
+                {% endif %}
+              {% else %}
+                  <h3>
+                  {{ error }}
+                  </h3>
+            {% endif %}
+            </div></li>
+        </ul>
+        <div class="container">
+
+            <header>
+              <div class="weather">
+          			<iframe id="forecast_embed" type="text/html"  frameborder="0" height="245px" width="800px" src="https://forecast.io/embed/#lat=38.8801&lon=-77.2113&name=Falls%20Church,%20VA&font=Arial&color=white&text-color=white"></iframe>
+          		</div>
+              <div  id="timedate">
+                <a class="timedatetext" id="mon">January</a>
+                <a class="timedatetext" id="d">1</a>,
+                <a class="timedatetext" id="y">0</a><br />
+                <a class="timedatetext" id="h">12</a> :
+                <a class="timedatetext" id="m">00</a>
+                <!--:<a class="timedatetext" id="s">00</a>:
+                <a class="timedatetext" id="mi">000</a>-->
+              </div>
+            </header>
+        </div>
+    </body>
+</html>
