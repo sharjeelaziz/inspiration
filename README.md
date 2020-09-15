@@ -1,5 +1,7 @@
 # Inspiration
-Something to put my old monitor to good use.
+Display nice things on my frame made from an old monitor and Raspberry Pi.
+
+![Screenshot](/static/images/img.png)
 
 ```
 pip3 install -r requirements.txt
