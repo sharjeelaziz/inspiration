@@ -1,13 +1,4 @@
-@font-face {
-    font-family: 'BebasNeueRegular';
-    src: url('fonts/BebasNeue-webfont.eot');
-    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/BebasNeue-webfont.woff') format('woff'),
-         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
-         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 /* CSS reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
 	margin:0;
@@ -51,7 +42,7 @@ abbr,acronym { border:0;
 }
 /* General Demo Style */
 body{
-	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 	background: #000;
 	font-weight: 400;
 	font-size: 15px;
@@ -127,11 +118,11 @@ a{
     opacity: 0;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 60s linear infinite 0s;
-    -moz-animation: imageAnimation 60s linear infinite 0s;
-    -o-animation: imageAnimation 60s linear infinite 0s;
-    -ms-animation: imageAnimation 60s linear infinite 0s;
-    animation: imageAnimation 60s linear infinite 0s; 
+    -webkit-animation: imageAnimation 180s linear infinite 0s;
+    -moz-animation: imageAnimation 180s linear infinite 0s;
+    -o-animation: imageAnimation 180s linear infinite 0s;
+    -ms-animation: imageAnimation 180s linear infinite 0s;
+    animation: imageAnimation 180s linear infinite 0s; 
 }
 .cb-slideshow li div { 
     z-index: 1000;
@@ -144,11 +135,11 @@ a{
     color: #fff;
     border-right: 3px solid #ed1f24;
     padding: 20px;
-    -webkit-animation: titleAnimation 60s linear infinite 0s;
-    -moz-animation: titleAnimation 60s linear infinite 0s;
-    -o-animation: titleAnimation 60s linear infinite 0s;
-    -ms-animation: titleAnimation 60s linear infinite 0s;
-    animation: titleAnimation 60s linear infinite 0s; 
+    -webkit-animation: titleAnimation 180s linear infinite 0s;
+    -moz-animation: titleAnimation 180s linear infinite 0s;
+    -o-animation: titleAnimation 180s linear infinite 0s;
+    -ms-animation: titleAnimation 180s linear infinite 0s;
+    animation: titleAnimation 180s linear infinite 0s; 
 }
 .cb-slideshow li div h3 { 
     font-size: 100px;
@@ -159,78 +150,78 @@ a{
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(../images/2.jpg);
-    -webkit-animation-delay: 10s;
-    -moz-animation-delay: 10s;
-    -o-animation-delay: 10s;
-    -ms-animation-delay: 10s;
-    animation-delay: 10s; 
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s; 
 }
 .cb-slideshow li:nth-child(3) span { 
     background-image: url(../images/3.jpg);
-    -webkit-animation-delay: 20s;
-    -moz-animation-delay: 20s;
-    -o-animation-delay: 20s;
-    -ms-animation-delay: 20s;
-    animation-delay: 20s; 
+    -webkit-animation-delay: 60s;
+    -moz-animation-delay: 60s;
+    -o-animation-delay: 60s;
+    -ms-animation-delay: 60s;
+    animation-delay: 60s; 
 }
 .cb-slideshow li:nth-child(4) span { 
     background-image: url(../images/4.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s; 
+    -webkit-animation-delay: 90s;
+    -moz-animation-delay: 90s;
+    -o-animation-delay: 90s;
+    -ms-animation-delay: 90s;
+    animation-delay: 90s; 
 }
 .cb-slideshow li:nth-child(5) span { 
     background-image: url(../images/5.jpg);
-    -webkit-animation-delay: 40s;
-    -moz-animation-delay: 40s;
-    -o-animation-delay: 40s;
-    -ms-animation-delay: 40s;
-    animation-delay: 40s; 
+    -webkit-animation-delay: 120s;
+    -moz-animation-delay: 120s;
+    -o-animation-delay: 120s;
+    -ms-animation-delay: 120s;
+    animation-delay: 120s; 
 }
 .cb-slideshow li:nth-child(6) span { 
     background-image: url(../images/6.jpg);
-    -webkit-animation-delay: 50s;
-    -moz-animation-delay: 50s;
-    -o-animation-delay: 50s;
-    -ms-animation-delay: 50s;
-    animation-delay: 50s; 
+    -webkit-animation-delay: 150s;
+    -moz-animation-delay: 150s;
+    -o-animation-delay: 150s;
+    -ms-animation-delay: 150s;
+    animation-delay: 150s; 
 }
 .cb-slideshow li:nth-child(2) div { 
-    -webkit-animation-delay: 10s;
-    -moz-animation-delay: 10s;
-    -o-animation-delay: 10s;
-    -ms-animation-delay: 10s;
-    animation-delay: 10s; 
-}
-.cb-slideshow li:nth-child(3) div { 
-    -webkit-animation-delay: 20s;
-    -moz-animation-delay: 20s;
-    -o-animation-delay: 20s;
-    -ms-animation-delay: 20s;
-    animation-delay: 20s; 
-}
-.cb-slideshow li:nth-child(4) div { 
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
     animation-delay: 30s; 
 }
+.cb-slideshow li:nth-child(3) div { 
+    -webkit-animation-delay: 60s;
+    -moz-animation-delay: 60s;
+    -o-animation-delay: 60s;
+    -ms-animation-delay: 60s;
+    animation-delay: 60s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    -webkit-animation-delay: 90s;
+    -moz-animation-delay: 90s;
+    -o-animation-delay: 90s;
+    -ms-animation-delay: 90s;
+    animation-delay: 90s; 
+}
 .cb-slideshow li:nth-child(5) div { 
-    -webkit-animation-delay: 40s;
-    -moz-animation-delay: 40s;
-    -o-animation-delay: 40s;
-    -ms-animation-delay: 40s;
-    animation-delay: 40s; 
+    -webkit-animation-delay: 120s;
+    -moz-animation-delay: 120s;
+    -o-animation-delay: 120s;
+    -ms-animation-delay: 120s;
+    animation-delay: 120s; 
 }
 .cb-slideshow li:nth-child(6) div { 
-    -webkit-animation-delay: 50s;
-    -moz-animation-delay: 50s;
-    -o-animation-delay: 50s;
-    -ms-animation-delay: 50s;
-    animation-delay: 50s; 
+    -webkit-animation-delay: 150s;
+    -moz-animation-delay: 150s;
+    -o-animation-delay: 150s;
+    -ms-animation-delay: 150s;
+    animation-delay: 150s; 
 }
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation { 
